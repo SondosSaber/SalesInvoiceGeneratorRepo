@@ -18,6 +18,6 @@ public class Main {
         btn.performCreateBtnsActions();
         sf.createTheFrame();
         
-//        p.createPanels();
+//        p.createPanels(sf);
     }
 }
