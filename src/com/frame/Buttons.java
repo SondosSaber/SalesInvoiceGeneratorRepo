@@ -21,7 +21,8 @@ public class Buttons extends Panels implements ActionListener {
     public void createButtonRP(Panels p){
         p.getRP().add(btn3);
         p.getRP().add(btn4);
-        p.getRP().setLayout(new FlowLayout(FlowLayout.RIGHT));
+//        p.getRP().setLayout(new FlowLayout(FlowLayout.RIGHT));
+        p.getRP().setLayout(new BoxLayout(leftPanel, BoxLayout.PAGE_AXIS));
     }
 
     public void performCreateBtnsActions(){

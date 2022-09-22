@@ -18,6 +18,7 @@ public class Main {
         p.createLPanel(sf);
 
         ta.createTextArea(p);
+        p.createMPanel(sf);
         table.createInvoiceItems(p);
         btn.createButtonRP(p);
         p.createRPanel(sf);
