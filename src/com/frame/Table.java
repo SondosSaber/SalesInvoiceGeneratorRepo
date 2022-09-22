@@ -1,6 +1,7 @@
 package com.frame;
 
 import javax.swing.*;
+import javax.swing.text.BoxView;
 import java.awt.*;
 
 public class Table extends Panels{
@@ -18,6 +19,7 @@ public class Table extends Panels{
         t = new JTable(data, cols);
         p.getLP().add(new JScrollPane(t));
         p.getLP().setLayout(new FlowLayout(FlowLayout.LEFT));
+        t.setLayout(new FlowLayout(BoxView.TOP));
     }
 
     public void createInvoiceItems(Panels p){
@@ -30,6 +32,6 @@ public class Table extends Panels{
         };
         t = new JTable(data, cols);
         p.getRP().add(new JScrollPane(t));
-        p.getRP().setLayout(new FlowLayout(FlowLayout.RIGHT));
+        t.setLayout(new FlowLayout(BoxView.CENTER));
     }
 }

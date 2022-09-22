@@ -1,6 +1,7 @@
 package com.frame;
 
 import javax.swing.*;
+import javax.swing.text.BoxView;
 import java.awt.*;
 
 public class TextArea extends Panels{
@@ -21,6 +22,6 @@ public class TextArea extends Panels{
         p.getMP().add(new JLabel("Customer name"));
         p.getMP().add(customerName);
         p.getMP().add(invoiceTotal);
-        p.getMP().setLayout(new FlowLayout(FlowLayout.RIGHT));
+        p.getMP().setLayout(new FlowLayout(BoxLayout.PAGE_AXIS));
     }
 }

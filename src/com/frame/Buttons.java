@@ -1,6 +1,7 @@
 package com.frame;
 
 import javax.swing.*;
+import javax.swing.text.BoxView;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,14 +16,15 @@ public class Buttons extends Panels implements ActionListener {
     public void createButtonLP(Panels p){
         p.getLP().add(btn1);
         p.getLP().add(btn2);
-        p.getLP().setLayout(new FlowLayout(FlowLayout.LEFT));
+        btn1.setLayout(new FlowLayout(BoxView.BOTTOM));
+        btn2.setLayout(new FlowLayout(BoxView.BOTTOM));
     }
 
     public void createButtonRP(Panels p){
         p.getRP().add(btn3);
         p.getRP().add(btn4);
-//        p.getRP().setLayout(new FlowLayout(FlowLayout.RIGHT));
-        p.getRP().setLayout(new BoxLayout(leftPanel, BoxLayout.PAGE_AXIS));
+        btn3.setLayout(new FlowLayout(BoxView.BOTTOM));
+        btn4.setLayout(new FlowLayout(BoxView.BOTTOM));
     }
 
     public void performCreateBtnsActions(){
