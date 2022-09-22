@@ -25,7 +25,7 @@ public class Panels extends SalesFrame{
 
     public void createMPanel(SalesFrame sf){
         middlePanel.setBounds(100,50,650,1000);
-        middlePanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        middlePanel.setLayout(new BoxLayout(middlePanel, BoxLayout.PAGE_AXIS));
         middlePanel.setBackground(Color.white);
         sf.getF().add(middlePanel);
     }
