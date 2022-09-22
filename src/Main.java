@@ -11,12 +11,13 @@ public class Main {
 //        Panels p = new Panels();
 
         sf.createTheFrame();
-        m.createMenu();
+
+//        m.createMenu();
 //        p.createPanels();
-        table.createInvoiceTable();
-        ta.createTextArea();
-        table.createInvoiceItems();
-        btn.createButton();
-        btn.performCreateBtnsActions();
+//        table.createInvoiceTable();
+//        ta.createTextArea();
+//        table.createInvoiceItems();
+//        btn.createButton();
+//        btn.performCreateBtnsActions();
     }
 }
