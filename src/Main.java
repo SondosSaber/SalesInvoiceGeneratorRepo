@@ -11,6 +11,7 @@ public class Main {
         Panels p = new Panels();
 
         m.createMenu(sf);
+        m.performMenuActions();
 
         table.createInvoiceTable(p);
         btn.createButtonLP(p);

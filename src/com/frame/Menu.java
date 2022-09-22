@@ -2,8 +2,10 @@ package com.frame;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Menu extends SalesFrame{
+public class Menu extends SalesFrame implements ActionListener {
 
     private JMenuBar menuBar = new JMenuBar();;
     private JMenu fileMenu = new JMenu("File");
@@ -17,4 +19,26 @@ public class Menu extends SalesFrame{
         sf.getF().setJMenuBar(menuBar);
         sf.getF().setLayout(new FlowLayout());
     }
+
+    public void performMenuActions(){
+        loadFile.addActionListener(this);
+        saveFile.addActionListener(this);
+    }
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource().equals(loadFile)){
+            JOptionPane.showInternalMessageDialog(
+                    this,
+                    "Upload your file",
+                    "Load file",
+                    JOptionPane.INFORMATION_MESSAGE);
+        }
+        else if (e.getSource().equals(saveFile)) {
+            JOptionPane.showInternalMessageDialog(
+                    this,
+                    "Save your file",
+                    "Save file",
+                    JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
 }
