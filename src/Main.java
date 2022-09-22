@@ -10,14 +10,14 @@ public class Main {
         TextArea ta = new TextArea();
 //        Panels p = new Panels();
 
+        m.createMenu(sf);
+        table.createInvoiceTable(sf);
+        ta.createTextArea(sf);
+        table.createInvoiceItems(sf);
+        btn.createButton(sf);
+        btn.performCreateBtnsActions();
         sf.createTheFrame();
-
-//        m.createMenu();
+        
 //        p.createPanels();
-//        table.createInvoiceTable();
-//        ta.createTextArea();
-//        table.createInvoiceItems();
-//        btn.createButton();
-//        btn.performCreateBtnsActions();
     }
 }

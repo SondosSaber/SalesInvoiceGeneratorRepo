@@ -9,17 +9,17 @@ public class TextArea extends SalesFrame{
     private JLabel invoiceNumber;
     private JLabel invoiceTotal;
 
-    public void createTextArea(){
-        f.setLayout(new FlowLayout());
+    public void createTextArea(SalesFrame sf){
+        sf.getF().setLayout(new FlowLayout());
         invoiceNumber = new JLabel("Invoice Number    23");
         invoiceDate = new JTextField(10);
         customerName = new JTextField(10);
         invoiceTotal = new JLabel("Invoice Total    350.50");
-        f.add(invoiceNumber);
-        f.add(new JLabel("Invoice date"));
-        f.add(invoiceDate);
-        f.add(new JLabel("Customer name"));
-        f.add(customerName);
-        f.add(invoiceTotal);
+        sf.getF().add(invoiceNumber);
+        sf.getF().add(new JLabel("Invoice date"));
+        sf.getF().add(invoiceDate);
+        sf.getF().add(new JLabel("Customer name"));
+        sf.getF().add(customerName);
+        sf.getF().add(invoiceTotal);
     }
 }

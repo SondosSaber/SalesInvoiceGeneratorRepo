@@ -10,11 +10,11 @@ public class Menu extends SalesFrame{
     private JMenuItem loadFile = new JMenuItem("Load File");
     private JMenuItem saveFile = new JMenuItem("Save File");
 
-    public void createMenu(){
-        f.setJMenuBar(menuBar);
+    public void createMenu(SalesFrame sf){
         menuBar.add(fileMenu);
         fileMenu.add(loadFile);
         fileMenu.add(saveFile);
-        f.setLayout(new FlowLayout());
+        sf.getF().setJMenuBar(menuBar);
+        sf.getF().setLayout(new FlowLayout());
     }
 }

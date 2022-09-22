@@ -12,12 +12,12 @@ public class Buttons extends SalesFrame implements ActionListener {
     private JButton btn3 = new JButton("Save");
     private JButton btn4 = new JButton("Cancel");
 
-    public void createButton(){
-        f.add(btn1);
-        f.add(btn2);
-        f.add(btn3);
-        f.add(btn4);
-        f.setLayout(new FlowLayout());
+    public void createButton(SalesFrame sf){
+        sf.getF().add(btn1);
+        sf.getF().add(btn2);
+        sf.getF().add(btn3);
+        sf.getF().add(btn4);
+        sf.getF().setLayout(new FlowLayout());
     }
 
     public void performCreateBtnsActions(){
