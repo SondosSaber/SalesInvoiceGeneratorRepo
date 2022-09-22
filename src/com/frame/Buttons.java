@@ -5,19 +5,23 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Buttons extends SalesFrame implements ActionListener {
+public class Buttons extends Panels implements ActionListener {
 
      JButton btn1 = new JButton("Create New Invoice");
     private JButton btn2 = new JButton("Delete Invoice");
     private JButton btn3 = new JButton("Save");
     private JButton btn4 = new JButton("Cancel");
 
-    public void createButton(SalesFrame sf){
-        sf.getF().add(btn1);
-        sf.getF().add(btn2);
-        sf.getF().add(btn3);
-        sf.getF().add(btn4);
-        sf.getF().setLayout(new FlowLayout());
+    public void createButtonLP(Panels p){
+        p.getLP().add(btn1);
+        p.getLP().add(btn2);
+        p.getLP().setLayout(new FlowLayout(FlowLayout.LEFT));
+    }
+
+    public void createButtonRP(Panels p){
+        p.getRP().add(btn3);
+        p.getRP().add(btn4);
+        p.getRP().setLayout(new FlowLayout(FlowLayout.RIGHT));
     }
 
     public void performCreateBtnsActions(){

@@ -17,7 +17,7 @@ public class Table extends SalesFrame{
         };
         t = new JTable(data, cols);
         sf.getF().add(new JScrollPane(t));
-        sf.getF().setLayout(new FlowLayout());
+        sf.getF().setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 
     public void createInvoiceItems(SalesFrame sf){
@@ -30,6 +30,6 @@ public class Table extends SalesFrame{
         };
         t = new JTable(data, cols);
         sf.getF().add(new JScrollPane(t));
-        sf.getF().setLayout(new FlowLayout());
+        sf.getF().setLayout(new FlowLayout(FlowLayout.RIGHT));
     }
 }

@@ -21,5 +21,6 @@ public class TextArea extends SalesFrame{
         sf.getF().add(new JLabel("Customer name"));
         sf.getF().add(customerName);
         sf.getF().add(invoiceTotal);
+        sf.getF().setLayout(new FlowLayout(FlowLayout.RIGHT));
     }
 }
