@@ -8,15 +8,23 @@ public class Main {
         Table table = new Table();
         Buttons btn = new Buttons();
         TextArea ta = new TextArea();
-//        Panels p = new Panels();
+        Panels p = new Panels();
+
+        m.createMenu(sf);
+        m.performMenuActions();
+
+        table.createInvoiceTable(p);
+        btn.createButtonLP(p);
+        p.createLPanel(sf);
+
+        ta.createTextArea(p);
+        p.createMPanel(sf);
+        table.createInvoiceItems(p);
+        btn.createButtonRP(p);
+        p.createRPanel(sf);
+
+        btn.performCreateBtnsActions();
 
         sf.createTheFrame();
-        m.createMenu();
-//        p.createPanels();
-        table.createInvoiceTable();
-        ta.createTextArea();
-        table.createInvoiceItems();
-        btn.createButton();
-        btn.performCreateBtnsActions();
     }
 }
