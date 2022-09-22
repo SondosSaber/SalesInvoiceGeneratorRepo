@@ -3,11 +3,11 @@ package com.frame;
 import javax.swing.*;
 import java.awt.*;
 
-public class Table extends SalesFrame{
+public class Table extends Panels{
 
     private JTable t;
 
-    public void createInvoiceTable(SalesFrame sf){
+    public void createInvoiceTable(Panels p){
         String[] cols = {"No.", "Date", "Customer", "Total"};
         String[][] data = {
                 {"","","",""},
@@ -16,11 +16,11 @@ public class Table extends SalesFrame{
                 {"","","",""}
         };
         t = new JTable(data, cols);
-        sf.getF().add(new JScrollPane(t));
-        sf.getF().setLayout(new FlowLayout(FlowLayout.LEFT));
+        p.getLP().add(new JScrollPane(t));
+        p.getLP().setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 
-    public void createInvoiceItems(SalesFrame sf){
+    public void createInvoiceItems(Panels p){
         String[] cols = {"No.", "Item Name", "Item Price", "Count", "Item Total"};
         String[][] data = {
                 {"","","","", ""},
@@ -29,7 +29,7 @@ public class Table extends SalesFrame{
                 {"","","","", ""}
         };
         t = new JTable(data, cols);
-        sf.getF().add(new JScrollPane(t));
-        sf.getF().setLayout(new FlowLayout(FlowLayout.RIGHT));
+        p.getRP().add(new JScrollPane(t));
+        p.getRP().setLayout(new FlowLayout(FlowLayout.RIGHT));
     }
 }

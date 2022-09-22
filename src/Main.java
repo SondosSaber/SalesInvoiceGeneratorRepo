@@ -4,20 +4,25 @@ public class Main {
     public static void main(String[] args) {
 
         SalesFrame sf = new SalesFrame();
-//        Menu m = new Menu();
-//        Table table = new Table();
+        Menu m = new Menu();
+        Table table = new Table();
         Buttons btn = new Buttons();
-//        TextArea ta = new TextArea();
+        TextArea ta = new TextArea();
         Panels p = new Panels();
 
-//        m.createMenu(sf);
-        p.createPanels(sf);
-//        table.createInvoiceTable(sf);
-//        ta.createTextArea(sf);
-//        table.createInvoiceItems(sf);
+        m.createMenu(sf);
+
+        table.createInvoiceTable(p);
         btn.createButtonLP(p);
+        p.createLPanel(sf);
+
+        ta.createTextArea(p);
+        table.createInvoiceItems(p);
         btn.createButtonRP(p);
+        p.createRPanel(sf);
+
         btn.performCreateBtnsActions();
+
         sf.createTheFrame();
     }
 }
