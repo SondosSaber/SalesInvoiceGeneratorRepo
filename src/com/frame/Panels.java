@@ -39,5 +39,4 @@ public class Panels extends SalesFrame{
     public JPanel getMP() {
         return middlePanel;
     }
-
 }
